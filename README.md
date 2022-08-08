@@ -6,19 +6,19 @@ Availability of blood.
 - User can also **Complain** for over disbursement against any medical organisations with valid proof.
 <BR>
 
-## Dependencies Used
+## Dependencies Used :
 ```
  implementation 'com.intuit.sdp:sdp-android:1.1.0'
 ```
 
 
-## ICON :
+## Icon :
 
 ### The Icon of the Application is designed by Author Swagata Roy herself
 
 ![icon](https://user-images.githubusercontent.com/93351450/183114297-ed6c3a4a-e8ac-4de1-83f1-1a33c09da8a0.png)
 
-## Dashboard Icons
+## Dashboard Icons :
 
 ### The Icons of the Application is designed by Author Swagata Roy herself
 
