@@ -5,12 +5,9 @@
             android:width="@dimen/_8sdp"></stroke>
         <solid android:color="@color/white">
         </solid>
-
         <corners
-            android:topLeftRadius="@dimen/_30sdp"
-            android:topRightRadius="@dimen/_30sdp"
-            android:bottomLeftRadius="@dimen/_150sdp"
-            android:bottomRightRadius="@dimen/_1sdp"></corners>
+           android:topRightRadius="@dimen/_40sdp"
+            ></corners>
     </shape>
     </item>
 </selector>

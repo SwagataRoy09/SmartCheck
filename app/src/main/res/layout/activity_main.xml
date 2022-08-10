@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,46 +7,99 @@
     android:background="#130F5D"
     tools:context=".MainActivity"
     android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_90sdp"
+        android:background="#130F5D"
+        >
+        <ImageView
+            android:outlineSpotShadowColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="@dimen/_10sdp"
+            android:src="@drawable/main_icon"/>
+    </LinearLayout>
   <LinearLayout
       android:layout_gravity="top"
       android:layout_width="match_parent"
-      android:layout_height="@dimen/_400sdp"
+      android:layout_height="0dp"
+      android:layout_weight="7"
       android:background="@drawable/round"
       android:backgroundTint="#EBEAFF"
-      android:orientation="vertical"
-      >
-    <EditText
-        android:layout_marginTop="@dimen/_80sdp"
-        android:layout_marginHorizontal="@dimen/_31sdp"
-        android:background="@drawable/round2"
-        android:id="@+id/name"
-        android:hint="NAME"
-        android:paddingVertical="@dimen/_10sdp"
-        android:paddingHorizontal="@dimen/_12sdp"
-        android:textColorHint="#130F5D"
-        android:layout_width="@dimen/_250sdp"
-       android:layout_height="wrap_content"
-        android:drawablePadding="@dimen/_8sdp"
-        android:drawableRight="@drawable/ic_baseline_person_outline_24"
-        />
-    <EditText
-        android:layout_marginVertical="@dimen/_28sdp"
-        android:layout_marginHorizontal="@dimen/_31sdp"
-        android:background="@drawable/round2"
-        android:id="@+id/password"
-        android:hint="PASSWORD"
-        android:paddingVertical="@dimen/_10sdp"
-        android:paddingHorizontal="@dimen/_12sdp"
-        android:textColorHint="#130F5D"
-        android:layout_width="@dimen/_250sdp"
-        android:layout_height="wrap_content"
-        android:drawablePadding="@dimen/_8sdp"
-        android:drawableRight="@drawable/ic_baseline_error_outline_24"        />
+      android:orientation="vertical">
+
+      <TextView
+          android:layout_marginTop="@dimen/_10sdp"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="LOGIN"
+          android:fontFamily="@font/frescaregular"
+          android:gravity="center"
+          android:textSize="@dimen/_30sdp"
+          android:textColor="#130F5D"/>
+
+      <com.google.android.material.textfield.TextInputLayout
+          android:layout_marginTop="@dimen/_30sdp"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          app:boxStrokeWidth="0dp"
+          app:boxStrokeWidthFocused="0dp"
+          app:boxStrokeColor="#FFF"
+          app:boxBackgroundColor="#FFF">
+          <com.google.android.material.textfield.TextInputEditText
+              android:layout_marginHorizontal="@dimen/_30sdp"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:hint="NAME"
+              android:inputType="textPersonName"
+              android:backgroundTint="#fff"
+              android:background="@drawable/round2"
+              android:id="@+id/name"
+              android:maxLines="1"
+              android:textColorHint="#130F5D"
+              android:fontFamily="@font/frescaregular"
+              android:drawableRight="@drawable/ic_baseline_person_outline_24"
+              />
+      </com.google.android.material.textfield.TextInputLayout>
+
+      <com.google.android.material.textfield.TextInputLayout
+          android:layout_marginTop="@dimen/_20sdp"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          app:boxStrokeWidth="0dp"
+          app:boxStrokeWidthFocused="0dp"
+          app:boxStrokeColor="#FFF"
+          app:boxBackgroundColor="#FFF"
+          app:passwordToggleEnabled="true"
+          app:passwordToggleTint="#130F5D">
+          <com.google.android.material.textfield.TextInputEditText
+              android:layout_marginHorizontal="@dimen/_30sdp"
+              android:inputType="textWebPassword"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:hint="PASSWORD"
+              android:backgroundTint="#fff"
+              android:background="@drawable/round2"
+              android:id="@+id/password"
+              android:textColorHint="#130F5D"
+              android:fontFamily="@font/frescaregular"/>
+      </com.google.android.material.textfield.TextInputLayout>
+      <TextView
+          android:id="@+id/tv_forgetpassword"
+          android:layout_marginTop="@dimen/_10sdp"
+          android:layout_marginEnd="@dimen/_28sdp"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="end"
+          android:fontFamily="@font/frescaregular"
+          android:text="Forgot Password ?"
+          android:textColor="#130F5D"/>
    <TextView
-       android:id="@+id/loginbutton"
+       android:id="@+id/tv_loginbutton"
        android:layout_gravity="center"
        android:gravity="center"
-       android:layout_marginTop="@dimen/_26sdp"
+       android:fontFamily="@font/frescaregular"
+       android:layout_marginTop="@dimen/_40sdp"
        android:layout_width="@dimen/_80sdp"
        android:layout_height="wrap_content"
        android:background="@drawable/round3"
@@ -55,45 +108,41 @@
        android:paddingHorizontal="@dimen/_12sdp"
        android:textColor="#130F5D"/>
  <TextView
-     android:id="@+id/forgot"
-     android:layout_marginTop="@dimen/_8sdp"
+     android:id="@+id/tv_signup"
+     android:layout_marginTop="@dimen/_10sdp"
+     android:fontFamily="@font/frescaregular"
      android:textSize="@dimen/_10sdp"
      android:layout_width="wrap_content"
      android:layout_height="wrap_content"
      android:layout_gravity="center"
      android:gravity="center"
-     android:text="Forget Password ?"
+     android:text="New user ? Create Account"
      android:textColor="#130F5D"/>
   </LinearLayout>
     <LinearLayout
-        android:layout_marginHorizontal="@dimen/_44sdp"
-        android:layout_width="match_parent"
-        android:layout_marginVertical="@dimen/_30sdp"
-        android:layout_height="wrap_content"
-        android:gravity="center"
         android:layout_gravity="bottom"
-        android:paddingHorizontal="@dimen/_30sdp"
-        android:paddingBottom="@dimen/_30sdp">
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginHorizontal="@dimen/_50sdp"
+        android:paddingVertical="@dimen/_15sdp"
+        android:layout_marginVertical="@dimen/_8sdp"
+        >
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/google"
+            android:outlineAmbientShadowColor="@color/white"
+            android:outlineSpotShadowColor="@color/white"
+            />
 
         <ImageView
-            android:layout_width="@dimen/_30sdp"
-            android:layout_height="@dimen/_30sdp"
-            android:layout_marginHorizontal="@dimen/_20sdp"
-            android:layout_marginVertical="@dimen/_8sdp"
-            android:src="@drawable/google" />
-
-        <ImageView
-            android:layout_width="@dimen/_30sdp"
-            android:layout_height="@dimen/_30sdp"
-            android:layout_marginHorizontal="@dimen/_10sdp"
-            android:layout_marginVertical="@dimen/_8sdp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
             android:src="@drawable/fb" />
     </LinearLayout>
-
-
-
-
-
-    
-
-</androidx.coordinatorlayout.widget.CoordinatorLayout>
+</LinearLayout>

@@ -4,11 +4,28 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/SmartCheck/smartcheck/app/src/main/res/drawable/gradient.xml" value="0.2265" />
+        <entry key="..\:/SmartCheck/smartcheck/app/src/main/res/drawable/ic_baseline_keyboard_backspace_24.xml" value="0.201" />
+        <entry key="..\:/SmartCheck/smartcheck/app/src/main/res/drawable/ic_baseline_search_24.xml" value="0.2385" />
         <entry key="..\:/SmartCheck/smartcheck/app/src/main/res/drawable/round.xml" value="0.2265" />
-        <entry key="..\:/SmartCheck/smartcheck/app/src/main/res/drawable/round2.xml" value="0.2265" />
-        <entry key="..\:/SmartCheck/smartcheck/app/src/main/res/drawable/round3.xml" value="0.2385" />
+        <entry key="..\:/SmartCheck/smartcheck/app/src/main/res/drawable/round2.xml" value="0.2" />
+        <entry key="..\:/SmartCheck/smartcheck/app/src/main/res/drawable/round3.xml" value="0.2" />
+        <entry key="..\:/SmartCheck/smartcheck/app/src/main/res/drawable/round4.xml" value="0.176" />
+        <entry key="..\:/SmartCheck/smartcheck/app/src/main/res/drawable/round5.xml" value="0.201" />
+        <entry key="..\:/SmartCheck/smartcheck/app/src/main/res/layout/activity_availability_of_blood.xml" value="0.163671875" />
+        <entry key="..\:/SmartCheck/smartcheck/app/src/main/res/layout/activity_complain_status.xml" value="0.17421875" />
+        <entry key="..\:/SmartCheck/smartcheck/app/src/main/res/layout/activity_history.xml" value="0.17421875" />
+        <entry key="..\:/SmartCheck/smartcheck/app/src/main/res/layout/activity_home_page.xml" value="0.176" />
         <entry key="..\:/SmartCheck/smartcheck/app/src/main/res/layout/activity_main.xml" value="0.173046875" />
+        <entry key="..\:/SmartCheck/smartcheck/app/src/main/res/layout/activity_medicine_cost.xml" value="0.17421875" />
+        <entry key="..\:/SmartCheck/smartcheck/app/src/main/res/layout/activity_pathology_price.xml" value="0.17421875" />
+        <entry key="..\:/SmartCheck/smartcheck/app/src/main/res/layout/activity_raise_acomplain.xml" value="0.17421875" />
+        <entry key="..\:/SmartCheck/smartcheck/app/src/main/res/layout/activity_sign_up.xml" value="0.17421875" />
         <entry key="..\:/SmartCheck/smartcheck/app/src/main/res/layout/activity_splashscreen.xml" value="0.17421875" />
+        <entry key="..\:/SmartCheck/smartcheck/app/src/main/res/layout/homepage.xml" value="0.17421875" />
+        <entry key="..\:/SmartCheck/smartcheck/app/src/main/res/layout/signuppage.xml" value="0.1734375" />
+        <entry key="..\:/SmartCheck/smartcheck/app/src/main/res/layout/single_view_of_grid_view.xml" value="0.17421875" />
+        <entry key="..\:/SmartCheck/smartcheck/app/src/main/res/layout/single_view_of_recycler_view.xml" value="0.176" />
+        <entry key="..\:/SmartCheck/smartcheck/app/src/main/res/layout/singleview.xml" value="0.17421875" />
       </map>
     </option>
   </component>

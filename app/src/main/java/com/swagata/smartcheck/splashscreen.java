@@ -26,6 +26,6 @@ public class splashscreen extends AppCompatActivity {
                 startActivity(intent);
 
             }
-        }, 5000);
+        }, 2000);
     }
 }

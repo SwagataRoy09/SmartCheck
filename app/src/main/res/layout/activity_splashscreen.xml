@@ -7,7 +7,7 @@
     android:background="#130F5D"
     tools:context=".splashscreen">
  <ImageView
-     android:id="@+id/start"
+     android:id="@+id/icon"
      android:layout_width="match_parent"
      android:layout_height="match_parent"
      android:src="@drawable/icon"/>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_margin="@dimen/_40sdp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+    <ImageView
+        android:background="@drawable/round3"
+        android:elevation="@dimen/_20sdp"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:layout_marginVertical="@dimen/_10sdp"
+        android:id="@+id/iv_icons"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_100sdp"
+        android:src="@drawable/availability_of_blood" />
+</LinearLayout>
