@@ -1,9 +1,380 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".raise_a_complain">
+    android:background="#EBEAFF"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/back"
+            android:src="@drawable/ic_baseline_keyboard_backspace_24"
+            android:padding="@dimen/_10sdp"
+            app:tint="#130F5D"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:text="YOUR COMPLAIN"
+            android:textStyle="bold"
+            android:textSize="@dimen/_15sdp"
+            android:textColor="#130F5D"
+            android:gravity="center"/>
+
+
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginVertical="@dimen/_45sdp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#130F5D"
+                android:textSize="@dimen/_12sdp"
+                android:text="Name and DOB"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_15sdp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border1"
+                android:layout_marginVertical="@dimen/_10sdp"
+                android:layout_marginHorizontal="@dimen/_15sdp"
+                android:orientation="vertical">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingVertical="@dimen/_15sdp"
+                    android:backgroundTint="@color/white"
+                    android:hint="Patient's name"
+                    android:maxLength="40"
+                    android:textSize="@dimen/_10sdp"
+                    android:maxLines="1"
+                    android:layout_marginHorizontal="@dimen/_5sdp"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:textColor="@color/black"
+                    android:textColorHint="#4F000000"
+                    android:textStyle="bold" />
+                <View
+                    android:layout_width="match_parent"
+                    android:background="#130F5D"
+                    android:layout_height="@dimen/_1sdp"
+                    android:layout_marginHorizontal="@dimen/_15sdp"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:id="@+id/dateofbirth"
+                    android:layout_height="match_parent"
+                    android:drawableEnd="@drawable/ic_baseline_calendar_today_24"
+                    android:drawableTint="#130F5D"
+                    android:backgroundTint="@color/white"
+                    android:textColor="@color/black"
+                    android:hint="Date of Birth"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_10sdp"
+                    android:maxLines="1"
+                    android:layout_marginHorizontal="@dimen/_15sdp"
+                    android:layout_centerInParent="true"
+                    android:inputType="date"
+                    android:maxLength="40"
+                    android:layout_marginVertical="@dimen/_5sdp"
+                    android:textColorHint="#4F000000"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    />
+
+
+
+
+            </LinearLayout>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#130F5D"
+                android:textSize="@dimen/_12sdp"
+                android:text="Query details"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_15sdp"/>
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:background="@drawable/border1"
+                android:layout_marginVertical="@dimen/_10sdp"
+
+                android:layout_marginHorizontal="@dimen/_15sdp"
+                android:orientation="vertical">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingVertical="@dimen/_15sdp"
+                    android:backgroundTint="@color/white"
+                    android:hint="Hopital name"
+                    android:maxLength="40"
+                    android:textSize="@dimen/_10sdp"
+                    android:maxLines="1"
+                    android:layout_marginHorizontal="@dimen/_5sdp"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:textColor="@color/black"
+                    android:textColorHint="#4F000000"
+                    android:textStyle="bold" />
+                <View
+                    android:layout_width="match_parent"
+                    android:background="#130F5D"
+                    android:layout_height="@dimen/_1sdp"
+                    android:layout_marginHorizontal="@dimen/_15sdp"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingVertical="@dimen/_15sdp"
+                    android:backgroundTint="@color/white"
+                    android:hint="Medical or Pathology name"
+                    android:maxLength="40"
+                    android:textSize="@dimen/_10sdp"
+                    android:maxLines="1"
+                    android:layout_marginHorizontal="@dimen/_5sdp"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:textColor="@color/black"
+                    android:textColorHint="#4F000000"
+                    android:textStyle="bold" />
+                <View
+                    android:layout_width="match_parent"
+                    android:background="#130F5D"
+                    android:layout_height="@dimen/_1sdp"
+                    android:layout_marginHorizontal="@dimen/_15sdp"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:id="@+id/dateofdouments"
+                    android:layout_height="match_parent"
+                    android:drawableEnd="@drawable/ic_baseline_calendar_today_24"
+                    android:drawableTint="#130F5D"
+                    android:paddingVertical="@dimen/_15sdp"
+                    android:paddingHorizontal="@dimen/_5sdp"
+                    android:backgroundTint="@color/white"
+                    android:textSize="@dimen/_13sdp"
+                    android:textColor="@color/black"
+                    android:hint="Date"
+                    android:textStyle="bold"
+                    android:maxLines="1"
+                    android:layout_centerInParent="true"
+                    android:inputType="date"
+                    android:maxLength="40"
+                    android:textColorHint="#4F000000"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:background="#130F5D"
+                    android:layout_height="@dimen/_1sdp"
+                    android:layout_marginHorizontal="@dimen/_15sdp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/_15sdp"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:orientation="horizontal">
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:id="@+id/amount1"
+                        android:layout_height="match_parent"
+                        android:background="#EAE2FF"
+                        android:textColor="@color/black"
+                        android:hint="Charged Amount"
+                        android:paddingLeft="@dimen/_15sdp"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/_12sdp"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:inputType="numberDecimal"
+                        android:maxLength="40"
+                        android:layout_marginVertical="@dimen/_5sdp"
+                        android:textColorHint="#5B000000"
+                        android:paddingHorizontal="@dimen/_5sdp"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        />
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:id="@+id/amount2"
+                        android:background="#d3d1ff"
+                        android:layout_height="match_parent"
+                        android:textSize="@dimen/_12sdp"
+                        android:gravity="center_vertical"
+                        android:paddingHorizontal="@dimen/_10sdp"
+                        android:textColor="@color/black"
+                        android:hint="Original Amount"
+                        android:paddingVertical="@dimen/_15sdp"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:textStyle="bold"
+                        android:maxLines="1"
+                        android:layout_centerInParent="true"
+                        android:inputType="numberDecimal"
+                        android:maxLength="40"
+                        android:layout_marginVertical="@dimen/_5sdp"
+                        android:textColorHint="#6F000000"
+                        />
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#130F5D"
+                android:textSize="@dimen/_12sdp"
+                android:text="Aadhar details"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_15sdp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border1"
+                android:layout_marginVertical="@dimen/_10sdp"
+                android:layout_marginHorizontal="@dimen/_15sdp"
+                android:orientation="vertical">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingVertical="@dimen/_10sdp"
+                    android:backgroundTint="@color/white"
+                    android:hint="0000 0000 0000 0000 (AADHAR NO.)"
+                    android:maxLength="40"
+                    android:textSize="@dimen/_13sdp"
+                    android:maxLines="1"
+                    android:layout_marginHorizontal="@dimen/_5sdp"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:textColor="@color/black"
+                    android:textColorHint="#4F000000"
+                    android:textStyle="bold" />
+
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#130F5D"
+                android:textSize="@dimen/_12sdp"
+                android:text="upload documents"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_15sdp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@drawable/border1"
+                android:layout_marginVertical="@dimen/_10sdp"
+                android:layout_marginHorizontal="@dimen/_15sdp"
+                android:padding="@dimen/_10sdp"
+                android:orientation="vertical">
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_120sdp"
+                    android:backgroundTint="#EAE2FF"
+                    android:layout_gravity="center"
+                    app:cardElevation="@dimen/_2sdp"
+                    app:cardCornerRadius="@dimen/_30sdp">
+                    <ImageView
+                        android:id="@+id/pdf"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/upload"
+                        android:padding="@dimen/_30sdp"/>
+                    <TextView
+                        android:id="@+id/_pdf"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="AADHAR CARD PDF"
+                        android:layout_gravity="bottom"
+                        android:gravity="center"
+                        android:textAllCaps="true"
+                        android:textSize="@dimen/_10sdp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:textColor="#130F5D"/>
+                </androidx.cardview.widget.CardView>
+                <TextView
+                    android:id="@+id/file"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/_10sdp"
+                    />
+            </LinearLayout>
+            <CheckBox
+                android:buttonTint="#130F5D"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingVertical="@dimen/_10sdp"
+                android:layout_marginHorizontal="@dimen/_15sdp"
+                android:textSize="@dimen/_10sdp"
+                android:layout_marginVertical="@dimen/_10sdp"
+                android:checked="true"
+                android:textColor="#130F5D"
+                android:paddingHorizontal="@dimen/_10sdp"
+                android:text="I Agree that all the Details entered are correct and valid"/>
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/submit"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_15sdp"
+        android:textStyle="bold"
+        android:text="Submit"
+        android:background="#130F5D"
+        android:gravity="center"
+        android:layout_gravity="bottom"
+        android:paddingVertical="@dimen/_10sdp"></TextView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

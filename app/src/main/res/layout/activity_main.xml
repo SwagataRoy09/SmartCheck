@@ -39,7 +39,7 @@
           android:textColor="#130F5D"/>
 
       <com.google.android.material.textfield.TextInputLayout
-          android:layout_marginTop="@dimen/_30sdp"
+          android:layout_marginTop="@dimen/_20sdp"
           android:layout_width="match_parent"
           android:layout_height="wrap_content"
           app:boxStrokeWidth="0dp"
@@ -61,7 +61,29 @@
               android:drawableRight="@drawable/ic_baseline_person_outline_24"
               />
       </com.google.android.material.textfield.TextInputLayout>
-
+      <com.google.android.material.textfield.TextInputLayout
+          android:layout_marginTop="@dimen/_20sdp"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          app:boxStrokeWidth="0dp"
+          app:boxStrokeWidthFocused="0dp"
+          app:boxStrokeColor="#FFF"
+          app:boxBackgroundColor="#FFF">
+          <com.google.android.material.textfield.TextInputEditText
+              android:layout_marginHorizontal="@dimen/_30sdp"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:hint="EMAIL ID"
+              android:inputType="textWebEmailAddress"
+              android:backgroundTint="#fff"
+              android:background="@drawable/round2"
+              android:id="@+id/email"
+              android:maxLines="1"
+              android:textColorHint="#130F5D"
+              android:fontFamily="@font/frescaregular"
+              android:drawableRight="@drawable/ic_baseline_mail_outline_24"
+              />
+      </com.google.android.material.textfield.TextInputLayout>
       <com.google.android.material.textfield.TextInputLayout
           android:layout_marginTop="@dimen/_20sdp"
           android:layout_width="match_parent"
@@ -99,7 +121,7 @@
        android:layout_gravity="center"
        android:gravity="center"
        android:fontFamily="@font/frescaregular"
-       android:layout_marginTop="@dimen/_40sdp"
+       android:layout_marginTop="@dimen/_20sdp"
        android:layout_width="@dimen/_80sdp"
        android:layout_height="wrap_content"
        android:background="@drawable/round3"

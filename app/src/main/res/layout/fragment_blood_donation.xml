@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#130F5D"
+    tools:context=".BloodDonation">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/_10sdp"
+    android:scrollbars="none">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:background="@drawable/border2"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/_10sdp"
+            android:gravity="center"
+            android:text="BLOOD DONOR"
+            android:fontFamily="@font/frescaregular"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_20sdp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:boxBackgroundColor="#A29CF8"
+            app:boxStrokeColor="#A29CF8"
+            app:boxStrokeWidth="0dp"
+            app:boxStrokeWidthFocused="0dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="@dimen/_20sdp"
+                android:background="@drawable/form"
+                android:backgroundTint="#EBEAFF"
+                android:fontFamily="@font/frescaregular"
+                android:hint="NAME"
+                android:inputType="textPersonName"
+                android:maxLines="1"
+                android:textColorHint="#130F5D"
+
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/form"
+            android:backgroundTint="#EBEAFF"
+            android:layout_marginHorizontal="@dimen/_20sdp"
+            android:layout_marginVertical="@dimen/_20sdp"
+            android:orientation="horizontal"
+            >
+            <RadioButton
+                android:checked="true"
+                android:buttonTint="#130F5D"
+                android:layout_width="wrap_content"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_height="wrap_content"
+                android:text="MALE"/>
+            <RadioButton
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FEMALE"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="OTHER"/>
+        </RadioGroup>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:boxBackgroundColor="#A29CF8"
+            app:boxStrokeColor="#A29CF8"
+            app:boxStrokeWidth="0dp"
+            app:boxStrokeWidthFocused="0dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/contact"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="@dimen/_20sdp"
+                android:background="@drawable/form"
+                android:backgroundTint="#EBEAFF"
+                android:fontFamily="@font/frescaregular"
+                android:hint="CONTACT NO."
+                android:inputType="phone"
+                android:maxLines="1"
+                android:textColorHint="#130F5D"
+
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/_20sdp"
+            android:layout_marginBottom="2dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_20sdp"
+                android:textSize="@dimen/_15sdp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/frescaregular"
+                android:text="BLOOD GROUP :" />
+
+            <Spinner
+                android:id="@+id/SpinnerBlood"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_25sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:background="@drawable/form"
+                android:backgroundTint="#EBEAFF"
+                android:entries="@array/Blood_Group"
+                android:textColor="@color/white"
+                android:inputType="text"
+                android:padding="10dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/_10sdp"
+            android:layout_marginBottom="2dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_15sdp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/frescaregular"
+                android:layout_marginHorizontal="@dimen/_20sdp"
+                android:text="STATE :" />
+            <Spinner
+                android:id="@+id/SpinnerState"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:textSize="@dimen/_25sdp"
+                android:background="@drawable/form"
+                android:backgroundTint="#EBEAFF"
+                android:entries="@array/division_list"
+                android:textColor="@color/white"
+                android:inputType="text"
+                android:padding="10dp" />
+
+        </LinearLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/_10sdp"
+            app:boxBackgroundColor="#A29CF8"
+            app:boxStrokeColor="#A29CF8"
+            app:boxStrokeWidth="0dp"
+            app:boxStrokeWidthFocused="0dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/location"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="@dimen/_20sdp"
+                android:background="@drawable/form"
+                android:backgroundTint="#EBEAFF"
+                android:fontFamily="@font/frescaregular"
+                android:hint="POSTAL ADDRESS"
+                android:inputType="textPostalAddress"
+                android:maxLines="1"
+                android:textColorHint="#130F5D"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:boxBackgroundColor="#A29CF8"
+            app:boxStrokeColor="#A29CF8"
+            app:boxStrokeWidth="0dp"
+            app:boxStrokeWidthFocused="0dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/date"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="@dimen/_20sdp"
+                android:background="@drawable/form"
+                android:backgroundTint="#EBEAFF"
+                android:fontFamily="@font/frescaregular"
+                android:hint="LAST DONATED ON"
+                android:inputType="datetime"
+                android:maxLines="1"
+                android:textColorHint="#130F5D"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+        <TextView
+            android:id="@+id/tv_submit"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:fontFamily="@font/frescaregular"
+            android:layout_width="@dimen/_80sdp"
+            android:padding="@dimen/_10sdp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buttonround"
+            android:text="SUBMIT"
+           android:layout_marginVertical="@dimen/_10sdp"
+            android:layout_marginHorizontal="@dimen/_20sdp"
+            android:textColor="#130F5D"/>
+    </LinearLayout>
+</ScrollView>
+</FrameLayout>
