@@ -1,4 +1,4 @@
-# SmartCheck (Ongoing Android App)
+# SmartCheck Android Application
 
 - Smart Check is a **Mobile Application** that aims to **stop exploitation of people in name of Medical Facilities**.
 - User can check for price of every medical facility , medicine dosage, composition, side effects and can even search for
