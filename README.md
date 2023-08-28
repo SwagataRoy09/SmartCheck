@@ -35,4 +35,5 @@ Availability of blood.
 
 <img style="margin-right: 100px" src="https://user-images.githubusercontent.com/93351450/183431109-b93a7728-bd47-4fa4-b899-b99e59428418.png" data-canonical- width="240" height="400" />
 
+### Report of Smart Check
 
